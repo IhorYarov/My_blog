@@ -1,3 +1,38 @@
 :root {
-  --my_shrift: ;
+  --title_shrift: "Righteous", sans-serif;
+  --text_style: "Ubuntu", sans-serif;
+}
+/* .description li {
+  color: transparent;
+} */
+.secdescription h1 {
+  color: #626262;
+  font-family: var(--title_shrift);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.textpage {
+  color: #626262;
+  font-family: var(--title_shrift);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minititle {
+  color: #b4ad9e;
+  font-family: var(--text_style);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 516px);
+  grid-template-columns: repeat(2, 420px);
+  row-gap: 30px;
+  grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
 }
