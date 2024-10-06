@@ -2,9 +2,6 @@
   --title_shrift: "Righteous", sans-serif;
   --text_style: "Ubuntu", sans-serif;
 }
-/* .description li {
-  color: transparent;
-} */
 .secdescription h1 {
   color: #626262;
   font-family: var(--title_shrift);
@@ -21,6 +18,9 @@
   font-weight: 400;
   line-height: normal;
 }
+.nav-list-item :hover {
+  color: #03a9f4;
+}
 .minititle {
   color: #b4ad9e;
   font-family: var(--text_style);
@@ -29,10 +29,80 @@
   font-weight: 300;
   line-height: normal;
 }
-.container {
-  display: grid;
-  grid-template-rows: repeat(3, 516px);
-  grid-template-columns: repeat(2, 420px);
-  row-gap: 30px;
-  grid-template-columns: 33.3333333333% 33.3333333333% 33.3333333333%;
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+.nav-list-item a {
+  color: #7d7d7d;
+  font-family: var(--text_style);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+.nav-list-item,
+.nav-list-item1 {
+  color: transparent;
+}
+.nav-list-item1 a {
+  color: #03a9f4;
+  font-family: var(--text_style);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+.description li {
+  color: transparent;
+}
+.nav-list li {
+  margin-right: 99px;
+}
+.container1,
+.container2,
+.container3 {
+  display: flex;
+  justify-content: center;
+  margin-left: 8.33333333333%;
+}
+.textpage {
+  margin-top: 40px;
+  margin-right: 65px;
+}
+.minititle {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.container2,
+.container3 {
+  margin-top: 130px;
+}
+.container1 {
+  margin-top: 92px;
+}
+.description li {
+  margin-right: 255px;
+}
+.button {
+  color: #626262;
+  font-family: var(--text_style);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 20px;
+  padding-left: 49px;
+  padding-right: 48px;
+  padding-bottom: 21px;
+  background-color: white;
+  stroke-width: 1px;
+  stroke: #626262;
+  cursor: pointer;
+}
+.container-for-button {
+  display: flex;
+  justify-content: center;
 }
