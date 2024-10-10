@@ -1,7 +1,94 @@
 :root {
+  /* Змінні тексту */
   --title_shrift: "Righteous", sans-serif;
   --text_style: "Ubuntu", sans-serif;
+  --page-font-size: 16px;
+  /* Змінні кольорів */
+  --accent-color: #339ead;
+  --item-category-text-color: #b4ad9e;
+  --event-color: #d318bd;
+  --text-color: #626262;
+  /* Змінні градієнтів */
+  --page-background-image-color: radial-gradient(
+    circle,
+    rgb(173, 18, 85) 0%,
+    rgb(177, 158, 166) 34%,
+    rgba(148, 233, 203, 1) 100%
+  );
 }
+
+/* reset start */
+/* reset end */
+
+/* base style start */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: var(--page-font-size);
+  color: var(--text-color);
+  font-family: var(--title_shrift);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px;
+}
+
+main {
+  background: var(--page-background-image-color);
+}
+
+img {
+  scale: 1;
+  &:hover {
+    scale: 1.2;
+    rotate: 2deg;
+  }
+}
+/* base style end */
+
+/* header start */
+.nav-list {
+  display: flex;
+  justify-content: center;
+}
+.nav-link {
+  color: #7d7d7d;
+  font-family: var(--text_style);
+  font-size: var(--page-font-size);
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: var(--event-color);
+    font-size: 17px;
+  }
+}
+
+.nav-list-item {
+  color: transparent;
+}
+
+a.active {
+  color: var(--accent-color);
+  font-family: var(--text_style);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+/* header end */
+
+/* main start */
 .secdescription h1 {
   color: #626262;
   font-family: var(--title_shrift);
@@ -18,43 +105,16 @@
   font-weight: 400;
   line-height: normal;
 }
-.nav-list-item :hover {
-  color: #03a9f4;
-}
-.minititle {
-  color: #b4ad9e;
+
+.item-category-text {
+  color: var(--item-category-text-color);
   font-family: var(--text_style);
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-.nav-list {
-  display: flex;
-  justify-content: center;
-}
-.nav-list-item a {
-  color: #7d7d7d;
-  font-family: var(--text_style);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
-.nav-list-item,
-.nav-list-item1 {
-  color: transparent;
-}
-.nav-list-item1 a {
-  color: #03a9f4;
-  font-family: var(--text_style);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: none;
-}
+
 .description li {
   color: transparent;
 }
@@ -101,8 +161,16 @@
   stroke-width: 1px;
   stroke: #626262;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--event-color);
+    background-color: black;
+    font-size: 20px;
+    font-weight: 700;
+  }
 }
 .container-for-button {
   display: flex;
   justify-content: center;
 }
+/* main end */
